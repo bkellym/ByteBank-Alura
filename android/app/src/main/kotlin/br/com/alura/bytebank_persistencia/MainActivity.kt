@@ -1,4 +1,4 @@
-package com.example.byte_bank
+package br.com.alura.bytebank_persistencia
 
 import io.flutter.embedding.android.FlutterActivity
 

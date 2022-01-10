@@ -1,18 +1,22 @@
 import 'package:flutter/material.dart';
 
-import 'package:byte_bank/enums/tema.dart';
-import 'package:byte_bank/screens/transferencia/lista.dart';
+import 'package:bytebank_persistencia/enums/tema.dart';
+import 'package:bytebank_persistencia/screens/dashboard.dart';
+import 'package:bytebank_persistencia/screens/contacts_list.dart';
 
-void main() => runApp(const BytebankApp());
+void main() {
+  runApp(const MyApp());
+}
 
-class BytebankApp extends StatelessWidget {
-  const BytebankApp({Key? key}) : super(key: key);
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: Tema.getTema(),
-      home: ListaTransferencias(),
+      home: const Dashboard(),
     );
   }
 }

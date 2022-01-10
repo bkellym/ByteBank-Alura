@@ -4,11 +4,11 @@ class Tema {
   static ThemeData getTema() {
     return ThemeData(
       colorScheme: ColorScheme(
-        primary: getPrimaryColor(), // ok
+        primary: Colors.green.shade900,
         primaryVariant: Colors.pink.shade100,
-        secondary: getSecundaryColor(),
+        secondary: Colors.green,
         secondaryVariant: Colors.green.shade100,
-        surface: Colors.deepPurple.shade600, // ok
+        surface: Colors.deepPurple.shade600,
         background: Colors.white,
         error: Colors.red,
         onPrimary: Colors.white,
@@ -19,13 +19,5 @@ class Tema {
         brightness: Brightness.light,
       ),
     );
-  }
-
-  static Color getPrimaryColor() {
-    return Colors.purple.shade300;
-  }
-
-  static Color getSecundaryColor() {
-    return Colors.deepOrange.shade400;
   }
 }
